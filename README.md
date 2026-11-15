@@ -6,7 +6,7 @@ Jamra turns 20+ years of NASA FIRMS active-fire hotspots from MODIS (1 km) and V
 into one fair, harmonized burning activity calendar (2003 → today) for any area in its coverage
 region (Portugal, Spain, Greece, Türkiye, Cyprus, Lebanon, Jordan, Palestine), with live
 early-warning checks every 3 hours. It is an installable web app (PWA). All explanations for users
-live inside the app.
+live inside the app,created by : Shahd Farraj
 
 ## Run locally
 ```bash
