@@ -1,8 +1,8 @@
 {
- "last_attempt_utc": "2026-11-15T04:12:44+00:00",
- "ok": true,
+ "last_attempt_utc": "2026-11-15T07:27:33+00:00",
+ "ok": false,
  "last_success_utc": "2026-11-15T04:12:44+00:00",
  "source": "NASA FIRMS API (VIIRS_NOAA20_NRT)",
- "message": "4798 rows received, 140 new; 638 hotspots in the last 7 days",
+ "message": "Update failed: GET failed after 4 tries: <urlopen error [Errno 101] Network is unreachable>",
  "through_date": "2026-11-15"
 }
