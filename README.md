@@ -1,6 +1,7 @@
 # Jamra · Burning Activity Calendar
 
 Team **Astro Byte** · NASA Space Apps Challenge 2026 · Challenge: *Harmonization of MODIS and VIIRS Hot Spots*
+https://ahmedetk.github.io/jamra/
 
 Jamra turns 20+ years of NASA FIRMS active-fire hotspots from MODIS (1 km) and VIIRS (375 m)
 into one fair, harmonized burning activity calendar (2003 → today) for any area in its coverage
