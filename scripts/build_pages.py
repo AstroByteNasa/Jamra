@@ -422,7 +422,7 @@ BODY = {
         <li>Built for the NASA Space Apps Challenge 2026.</li>
         <li>Not an official NASA product. NASA does not endorse this project. No NASA logos are used.</li>
         <li>Not an emergency service. Satellite data arrive hours late; in an emergency call your local emergency number.</li>
-        <li>Method, test results and limits: <a data-nav href="validation/">Validation</a>. Open source (MIT): <a id="repo-link" href="https://github.com/ahmedetk/jamra">github.com/ahmedetk/jamra</a></li>
+        <li>Method, test results and limits: <a data-nav href="validation/">Validation</a>. Open source (MIT): <a id="repo-link" href="https://github.com/AstroBytePS/jamra">github.com/AstroBytePS/jamra</a></li>
       </ul>
     </div>
   </section>""",
@@ -476,7 +476,7 @@ def page(slug, label, title):
 <meta name="theme-color" content="#F7F6F2">
 <meta property="og:title" content="jamra · 20 years of NASA fire data, one fair calendar">
 <meta property="og:description" content="NASA MODIS and VIIRS fire data in one fair calendar, with live early warning. Data: NASA FIRMS.">
-<meta property="og:image" content="https://ahmedetk.github.io/jamra/icons/og-image.png">
+<meta property="og:image" content="https://astrobyteps.github.io/jamra/icons/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="{R}fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{R}fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -519,7 +519,7 @@ def page(slug, label, title):
     </div>
     <ul>
       <li><a href="{R}calendar/" data-nav>Calendar</a></li><li><a href="{R}alerts/" data-nav>Alerts</a></li><li><a href="{R}live/" data-nav>Live Data</a></li>
-      <li><a href="{R}validation/" data-nav>Validation</a></li><li><a href="{R}about/" data-nav>About</a></li><li><a href="https://github.com/ahmedetk/jamra">GitHub</a></li>
+      <li><a href="{R}validation/" data-nav>Validation</a></li><li><a href="{R}about/" data-nav>About</a></li><li><a href="https://github.com/AstroBytePS/jamra">GitHub</a></li>
     </ul>
   </div>
 </footer>

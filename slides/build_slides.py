@@ -480,7 +480,7 @@ def build_backup(url, out_path, shots):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--url", default="https://ahmedetk.github.io/jamra/")
+    ap.add_argument("--url", default="https://astrobyteps.github.io/jamra/")
     ap.add_argument("--screenshot", default=str(ROOT / "slides" / "shots" / "app.png"))
     a = ap.parse_args()
     out = build(a.url, ROOT / "slides" / "AstroByte_Slides.pptx", a.screenshot)

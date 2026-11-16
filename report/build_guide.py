@@ -21,7 +21,7 @@ IMG = REP / "img"
 WEB = ROOT / "web" / "public" / "data"
 ICONS = ROOT / "web" / "public" / "icons"
 EDGE = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
-SITE = "https://ahmedetk.github.io/jamra/"
+SITE = "https://astrobyteps.github.io/jamra/"
 SHOT_FILES = {  # key: (file in shots/, max width) - made by scripts/guide_shots.mjs
     "home": ("g_home.png", 1280), "cal_top": ("g_cal_top.png", 1280), "cal_chart": ("g_cal_chart.png", 1280),
     "harm": ("g_harm.png", 1280), "cal_main": ("g_cal_main.png", 1280), "cal_detail": ("g_cal_detail.png", 1280),
@@ -427,7 +427,7 @@ ol li, ul li {{ margin-bottom: 1.5mm; }}
   <p>كرة الصفحة الرئيسية: <span class="en">Natural Earth</span> (ملكية عامة) · خريطة التقويم: <span class="en">© OpenStreetMap contributors · OpenMapTiles · OpenFreeMap</span> · <span class="en">three.js (MIT)</span> · <span class="en">MapLibre GL JS (BSD-3)</span> · الخطوط <span class="en">Playfair Display</span> و<span class="en">Inter</span> (<span class="en">SIL OFL</span>) · لوحات Viridis و Cividis و ColorBrewer. لا نستخدم شعارات ناسا، وناسا لا تتبنّى هذا المشروع.</p>
   <h3>الإفصاح عن استخدام الذكاء الاصطناعي (<span class="en">AI</span>)</h3>
   <div class="box">الكود كُتب بمساعد برمجة بالذكاء الاصطناعي (<span class="en">Claude Code</span> من <span class="en">Anthropic</span>)، بتوجيه من أحمد اتكيدك، الذي صمّم الموقع، وجهّز واجهة ناسا FIRMS وGitHub Actions والنشر، واختبر كل إصدار. الفريق اختار الطريقة العلمية وتحقق من كل النتائج. فيديو العرض صُنع بأدوات ذكاء اصطناعي، والتعليق الصوتي فيه مولَّد بالذكاء الاصطناعي (<span class="en">ElevenLabs</span>).</div>
-  <p class="small">الكود مفتوح المصدر (MIT): <span class="en">https://github.com/ahmedetk/jamra</span></p>
+  <p class="small">الكود مفتوح المصدر (MIT): <span class="en">https://github.com/AstroBytePS/jamra</span></p>
 </section>
 </body></html>"""
     out_html = REP / "Jamra_User_Guide_AR.html"

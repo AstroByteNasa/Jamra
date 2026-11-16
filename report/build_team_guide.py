@@ -17,7 +17,7 @@ WEB = ROOT / "web" / "public" / "data"
 SHOTS = REP / "shots"
 IMG = REP / "img_team"
 EDGE = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
-SITE = "https://ahmedetk.github.io/jamra/"
+SITE = "https://astrobyteps.github.io/jamra/"
 SHOT_FILES = {"home": "g_home.png", "cal_top": "g_cal_top.png", "cal_chart": "g_cal_chart.png", "cal_main": "g_cal_main.png",
               "cal_detail": "g_cal_detail.png", "alerts": "g_alerts.png", "live": "g_live.png", "validation": "g_validation.png",
               "about": "g_about.png"}
