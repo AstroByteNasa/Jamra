@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="web/public/icons/icon-512.png" alt="Jamra logo" width="100">
+  <img src="report/jamra-wordmark-avatar.png" alt="Jamra logo" width="155">
   <h1>Jamra · Burning Activity Calendar</h1>
   <p><strong>One fair fire record from two satellites, with live early warning.</strong></p>
   <p>Built by <strong>Team Astro Byte</strong> during the 30-hour NASA Space Apps Challenge 2026.</p>
@@ -10,7 +10,7 @@
 
 Jamra is an installable web app (PWA) that brings together more than 20 years of NASA FIRMS active-fire hotspot observations into one harmonized burning activity calendar, from 2003 to the present. It helps distinguish changes in burning activity from differences in satellite detection sensitivity.
 
-![Jamra interactive map and homepage](report/before_after/final_home_desktop.jpg)
+![Jamra interactive map and homepage](report/jamra-home-showcase.png)
 
 ## The challenge
 
@@ -26,9 +26,11 @@ Did detected burning activity really increase, or did our satellites get sharper
 
 ## Screenshots
 
+*Captured from the deployed application on November 22, 2026.*
+
 | Burning activity calendar | Early-warning alerts |
 | :---: | :---: |
-| ![Historical burning activity calendar](report/before_after/final_calendar_desktop.jpg) | ![Jamra alerts interface](report/img_team/alerts.jpg) |
+| ![Historical burning activity calendar](report/jamra-calendar-showcase.png) | ![Jamra alerts interface](report/jamra-alerts-showcase.png) |
 
 <details>
 <summary>Mobile experience</summary>
