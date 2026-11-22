@@ -1,14 +1,20 @@
-# Jamra · Burning Activity Calendar
-
-**One fair fire record from two satellites, with live early warning.**
-
-Built by **Team Astro Byte** for the NASA Space Apps Challenge 2026 — *Harmonization of MODIS and VIIRS Hot Spots*.
-
-### [Try Jamra →](https://astrobytenasa.github.io/Jamra/)
+<div align="center">
+  <img src="web/public/icons/icon-512.png" alt="Jamra logo" width="100">
+  <h1>Jamra · Burning Activity Calendar</h1>
+  <p><strong>One fair fire record from two satellites, with live early warning.</strong></p>
+  <p>Built by <strong>Team Astro Byte</strong> during the 30-hour NASA Space Apps Challenge 2026.</p>
+  <p>Challenge: <em>Harmonization of MODIS and VIIRS Hot Spots</em></p>
+  <p><a href="https://astrobytenasa.github.io/Jamra/"><strong>Try Jamra →</strong></a> · <a href="jamra_demo_30seconds.mp4">Watch the demo</a> · <a href="slides/AstroByte_Slides.pptx">Project presentation</a></p>
+  <p><a href="https://github.com/AstroByteNasa/Jamra/actions/workflows/site.yml"><img src="https://github.com/AstroByteNasa/Jamra/actions/workflows/site.yml/badge.svg" alt="Live update and deployment status"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a></p>
+</div>
 
 Jamra is an installable web app (PWA) that brings together more than 20 years of NASA FIRMS active-fire hotspot observations into one harmonized burning activity calendar, from 2003 to the present. It helps distinguish changes in burning activity from differences in satellite detection sensitivity.
 
 ![Jamra interactive map and homepage](report/before_after/final_home_desktop.jpg)
+
+## The challenge
+
+Did detected burning activity really increase, or did our satellites get sharper eyes? MODIS and VIIRS record the same phenomenon at different spatial resolutions. Directly comparing their raw counts can give a misleading picture of long-term change. Jamra addresses this by calibrating historical observations onto a common scale and presenting them in an accessible interactive calendar.
 
 ## What you can do
 
@@ -52,6 +58,23 @@ See the [model implementation](pipeline/jamra/harmonize.py) and [validation resu
 - [FIRMS API](https://firms.modaps.eosdis.nasa.gov/api/): near-real-time VIIRS observations.
 
 We acknowledge NASA FIRMS, part of NASA's [LANCE](https://earthdata.nasa.gov/lance) and Earth Science Data and Information System (ESDIS). Maps use MapLibre GL JS (BSD-3-Clause), OpenFreeMap and © OpenStreetMap contributors. NASA does not endorse this project.
+
+## Technology and repository layout
+
+| Component | Technology / location |
+| --- | --- |
+| Interactive map and PWA | JavaScript, MapLibre GL JS, HTML and CSS; [`web/`](web/) |
+| Data ingestion and harmonization | Python; [`pipeline/`](pipeline/) |
+| Scientific configuration and outputs | [`config.yaml`](config.yaml), [`data/`](data/) |
+| Automated data refresh and deployment | GitHub Actions; [workflow status](https://github.com/AstroByteNasa/Jamra/actions) |
+| Optional on-demand data proxy | Cloudflare Worker; [`worker/`](worker/) |
+
+## Project materials
+
+- [30-second demo video](jamra_demo_30seconds.mp4)
+- [NASA Space Apps presentation](slides/AstroByte_Slides.pptx)
+- [Arabic user guide (PDF)](report/Jamra_User_Guide_AR.pdf)
+- [Full validation results](data/processed/model_report.json)
 
 ## Run locally
 
@@ -135,7 +158,7 @@ more stable in only 1 of 5 countries (data/processed/model_report.json, frp_test
 - **Shahd Farraj**: Team lead: managed the team and the plan, found and prepared the NASA FIRMS data, and leads the presentation.
 - **Ahmad Akhras**: Idea, debugging and presentation: helped create the Jamra idea, debugged and tested the web app as assistant developer, and co-presents the pitch.
 - **Aya Salman**: Research and validation: researched the MODIS/VIIRS science and references, checked Jamra's numbers against NASA data, and prepared answers for the judges.
-- **Tala Yousef**: Video and user experience: made the demo video with English subtitles, tested the site as a first-time user, and gave design feedback.
+- **[Tala Yousef](https://github.com/tala-sy)**: Video and user experience: made the demo video with English subtitles, tested the site as a first-time user, and gave design feedback.
 
 ## AI disclosure
 
