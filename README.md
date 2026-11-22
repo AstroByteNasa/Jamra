@@ -4,7 +4,7 @@
 
 Built by **Team Astro Byte** for the NASA Space Apps Challenge 2026 — *Harmonization of MODIS and VIIRS Hot Spots*.
 
-### [Try Jamra →](https://astrobyteps.github.io/jamra/)
+### [Try Jamra →](https://astrobytenasa.github.io/Jamra/)
 
 Jamra is an installable web app (PWA) that brings together more than 20 years of NASA FIRMS active-fire hotspot observations into one harmonized burning activity calendar, from 2003 to the present. It helps distinguish changes in burning activity from differences in satellite detection sensitivity.
 
