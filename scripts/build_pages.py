@@ -97,14 +97,24 @@ TITLES = {
     "about": "About",
 }
 
-PAGES = [  # slug, nav label, <title>
-    ("", "Home", "jamra · 20 years of NASA fire data, one fair calendar"),
-    ("calendar", "Calendar", "Calendar · jamra"),
-    ("alerts", "Alerts", "Alerts · jamra"),
-    ("live", "Live Data", "Live Data · jamra"),
-    ("validation", "Validation", "Validation · jamra"),
-    ("about", "About", "About · jamra"),
+SITE_URL = "https://astrobytenasa.github.io/Jamra/"
+PAGES = [  # slug, nav label, HTML title
+    ("", "Home", "Jamra (جمرة) — NASA Fire Hotspots & Burning Activity Calendar"),
+    ("calendar", "Calendar", "Burning Activity Calendar & Fire Hotspot Map | Jamra"),
+    ("alerts", "Alerts", "Fire Activity Alerts & Early Warnings | Jamra"),
+    ("live", "Live Data", "Live NASA FIRMS Hotspot Data | Jamra"),
+    ("validation", "Validation", "MODIS–VIIRS Harmonization & Validation | Jamra"),
+    ("about", "About", "About Jamra & Team Astro Byte | NASA Space Apps Challenge 2026"),
 ]
+PAGE_DESCRIPTIONS = {
+    "": "Jamra (جمرة), by Team Astro Byte, explores 20+ years of NASA FIRMS MODIS and VIIRS fire hotspots in a harmonized burning activity calendar, with live alerts.",
+    "calendar": "Explore satellite-detected fire hotspots from 2003 onward on an interactive calendar and map. Compare MODIS and VIIRS activity across countries and custom regions.",
+    "alerts": "Explore recent NASA FIRMS fire hotspot activity and compare it with historical baselines. Jamra checks for unusually high activity every three hours.",
+    "live": "View recent satellite-detected active-fire hotspots from NASA FIRMS and download live data for Jamra's supported areas.",
+    "validation": "Discover how Jamra harmonizes MODIS and VIIRS hotspot counts, evaluates six models, and validates estimates using held-out years.",
+    "about": "Learn about Jamra (جمرة), an independent student project by Team Astro Byte for NASA Space Apps Challenge 2026, its data, team and scientific approach."
+}
+
 # removed information pages: their content is in the Arabic user guide; old links land on About
 OLD_PAGES = {"how-it-works": ("validation/", "how"), "limits": ("validation/", "limits"), "credits": ("about/", "")}
 
@@ -422,7 +432,7 @@ BODY = {
         <li>Built for the NASA Space Apps Challenge 2026.</li>
         <li>Not an official NASA product. NASA does not endorse this project. No NASA logos are used.</li>
         <li>Not an emergency service. Satellite data arrive hours late; in an emergency call your local emergency number.</li>
-        <li>Method, test results and limits: <a data-nav href="validation/">Validation</a>. Open source (MIT): <a id="repo-link" href="https://github.com/AstroBytePS/jamra">github.com/AstroBytePS/jamra</a></li>
+        <li>Method, test results and limits: <a data-nav href="validation/">Validation</a>. Open source (MIT): <a id="repo-link" href="https://github.com/AstroByteNasa/Jamra">github.com/AstroByteNasa/Jamra</a></li>
       </ul>
     </div>
   </section>""",
@@ -472,11 +482,16 @@ def page(slug, label, title):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
-<meta name="description" content="jamra harmonizes 20+ years of NASA MODIS and VIIRS active-fire hotspots into one fair burning activity calendar, with live early warning from NASA FIRMS.">
+<meta name="description" content="{PAGE_DESCRIPTIONS[slug]}">
 <meta name="theme-color" content="#F7F6F2">
-<meta property="og:title" content="jamra · 20 years of NASA fire data, one fair calendar">
-<meta property="og:description" content="NASA MODIS and VIIRS fire data in one fair calendar, with live early warning. Data: NASA FIRMS.">
-<meta property="og:image" content="https://astrobyteps.github.io/jamra/icons/og-image.png">
+<link rel="canonical" href="{SITE_URL}{slug + '/' if slug else ''}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jamra">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{PAGE_DESCRIPTIONS[slug]}">
+<meta property="og:url" content="{SITE_URL}{slug + '/' if slug else ''}">
+<meta property="og:image" content="{SITE_URL}icons/og-image.png">
+<meta property="og:image:alt" content="Jamra burning activity calendar">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="{R}fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{R}fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -513,13 +528,13 @@ def page(slug, label, title):
   <div class="wrap foot-in">
     <div>
       <a class="brand" href="{R}" data-nav aria-label="jamra home"><img src="{R}icons/wordmark-dark.png" width="78" height="32" alt="jamra" loading="lazy"></a>
-      <p>Team Astro Byte · Built for the NASA Space Apps Challenge 2026</p>
+      <p>Jamra (<span lang="ar">جمرة</span>) · Burning Activity Calendar · Team Astro Byte · Built for the NASA Space Apps Challenge 2026</p>
       <p>Not an official NASA product · NASA does not endorse this project · Not an emergency service · <b>Data: NASA FIRMS</b></p>
       <p class="build">Build {BUILD}</p>
     </div>
     <ul>
       <li><a href="{R}calendar/" data-nav>Calendar</a></li><li><a href="{R}alerts/" data-nav>Alerts</a></li><li><a href="{R}live/" data-nav>Live Data</a></li>
-      <li><a href="{R}validation/" data-nav>Validation</a></li><li><a href="{R}about/" data-nav>About</a></li><li><a href="https://github.com/AstroBytePS/jamra">GitHub</a></li>
+      <li><a href="{R}validation/" data-nav>Validation</a></li><li><a href="{R}about/" data-nav>About</a></li><li><a href="https://github.com/AstroByteNasa/Jamra">GitHub</a></li>
     </ul>
   </div>
 </footer>
@@ -537,7 +552,7 @@ def stub(target, hash_=""):
 <meta name="robots" content="noindex">
 <script>location.replace('../{target}' + location.search + (location.hash || '{h}'));</script>
 <meta http-equiv="refresh" content="0; url=../{target}{h}">
-<link rel="canonical" href="../{target}">
+<link rel="canonical" href="{SITE_URL}{target}">
 </head><body><p>This page moved: <a href="../{target}">open it here</a>.</p></body></html>
 """
 
@@ -553,6 +568,8 @@ def main():
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(stub(target, hash_), encoding="utf-8")
         print("redirect", old, "->", target)
+    urls = "\n".join(f"  <url><loc>{SITE_URL}{slug + '/' if slug else ''}</loc></url>" for slug, _, _ in PAGES)
+    (PUB / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + '\n</urlset>\n', encoding="utf-8")
     # service worker: same build id (new cache, versioned code files precached for offline use)
     sw = PUB / "sw.js"
     t = sw.read_text(encoding="utf-8")
