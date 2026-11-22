@@ -4,7 +4,7 @@
   <p><strong>One fair fire record from two satellites, with live early warning.</strong></p>
   <p>Built by <strong>Team Astro Byte</strong> during the 30-hour NASA Space Apps Challenge 2026.</p>
   <p>Challenge: <em>Harmonization of MODIS and VIIRS Hot Spots</em></p>
-  <p><a href="https://astrobytenasa.github.io/Jamra/"><strong>Try Jamra →</strong></a> · <a href="jamra_demo_30seconds.mp4">Watch the demo</a></p>
+  <p><a href="https://astrobytenasa.github.io/Jamra/"><strong>Try Jamra →</strong></a> · <a href="jamra_demo_30seconds.mp4">Watch the demo</a> · <a href="slides/AstroByte_Slides.pptx">Project presentation</a></p>
   <p><a href="https://github.com/AstroByteNasa/Jamra/actions/workflows/site.yml"><img src="https://github.com/AstroByteNasa/Jamra/actions/workflows/site.yml/badge.svg" alt="Live update and deployment status"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a></p>
 </div>
 
@@ -72,6 +72,7 @@ We acknowledge NASA FIRMS, part of NASA's [LANCE](https://earthdata.nasa.gov/lan
 ## Project materials
 
 - [30-second demo video](jamra_demo_30seconds.mp4)
+- [NASA Space Apps presentation](slides/AstroByte_Slides.pptx)
 - [Arabic user guide (PDF)](report/Jamra_User_Guide_AR.pdf)
 - [Full validation results](data/processed/model_report.json)
 
